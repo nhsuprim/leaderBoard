@@ -2,13 +2,242 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Leader Board</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leader Board</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/3ca82a7f67.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #E5E5E5;
+    }
+
+    .navbar {
+      background-color: #562EFF;
+    }
+
+    #active {
+      color: #FFC014;
+    }
+
+    #rating {
+      color: gray;
+    }
+
+    #hour {
+      background-color: #FFE4E8;
+      padding: 0 8px;
+      color: #FF4A60;
+      border-radius: 10px;
+    }
+
+    #box {
+      width: 300px;
+      padding-left: 25px;
+      margin: auto;
+      margin-bottom: 30px;
+      padding-top: 20px;
+      border-radius: 20px;
+    }
+  </style>
+
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center " href="#">
+        <img src="images/icons/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+        <span class="ps-2">Idea</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><img class="image-fluid" src="images/icons/profile.png" alt="" width="40"
+                height="40" class="d-inline-block align-text-top"></a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="bg-light mt-5 p-2 rounded">
+        <h4 class="text-primary my-4 ">Top Player</h4>
+        <div class="row gy-5 mb-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-center ">
+            <img width="56px" src="images/players/player-1.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <img width="56px" src="images/players/player-2.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center ">
+            <img width="56px" src="images/players/player-3.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center ">
+            <img width="56px" src="images/players/player-4.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center ">
+            <img width="56px" src="images/players/player-5.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center ">
+            <img width="56px" src="images/players/player-6.png" alt="">
+            <h4 class="ms-4">Jhon Smith</h4>
+          </div>
+        </div>
+
+        <hr class="">
+
+        <h4 class="text-primary my-4 ">Top Blogs</h4>
+
+
+        <div class="row g-3">
+          <div class="col-lg-6  d-flex ">
+            <div class="row g-3">
+              <div class="col-12 col-md-4">
+                <img class="img-fluid" width="177px" src="images/blogs/blog-1.png" alt="">
+              </div>
+              <div class="col-12 col-md-6">
+                <h4>13 of My Favorite UI/UX Goodies</h4>
+                <p>By <a href="">Danny Sapio</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6  d-flex ">
+            <div class="row g-3">
+              <div class="col-12 col-md-4">
+                <img class="img-fluid" width="177px" src="images/blogs/blog-2.png" alt="">
+              </div>
+              <div class="col-12 col-md-6">
+                <h4>13 of My Favorite UI/UX Goodies</h4>
+                <p>By <a href="">Danny Sapio</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6  d-flex ">
+            <div class="row g-3">
+              <div class="col-12 col-md-4">
+                <img width="177px" src="images/blogs/blog-3.png" alt="">
+              </div>
+              <div class="col-12 col-md-6">
+                <h4>13 of My Favorite UI/UX Goodies</h4>
+                <p>By <a href="">Danny Sapio</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6  d-flex ">
+            <div class="row g-3">
+              <div class="col-12 col-md-4">
+                <img class="img-fluid" width="177px" src="images/blogs/blog-4.png" alt="">
+              </div>
+              <div class="col-12 col-md-6">
+                <h4>13 of My Favorite UI/UX Goodies</h4>
+                <p>By <a href="">Danny Sapio</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="bg-light mt-3 p-2 rounded">
+        <h4 class="text-primary my-4 ">Top Blogs</h4>
+        <div class="row  d-flex justify-content-between  mt-3 m-auto">
+          <div id="box" class="col-lg-4  shadow-lg">
+            <img class="img-fluid" width="250px" src="images/courses/course-1.png" alt="">
+            <h4 class="pt-4">React-The Complete Guide 2020</h4>
+            <p class="text-danger">Reed Krakoff</p>
+            <div class="d-flex ">
+              <div class="icon">
+                <p><i id="active" class="fas fa-star"><i id="active" class="fas fa-star"></i><i id="active"
+                      class="fas fa-star"></i><i class="far fa-star">
+                    </i>
+                  </i></p>
+              </div>
+              <p id="rating">4.5</p>
+              <p id="hour"><i class="far fa-clock"></i> 01:30 hr</p>
+            </div>
+          </div>
+
+          <div id="box" class="col-lg-4  shadow-lg">
+            <img class="img-fluid" width="250px" src="images/courses/course-2.png" alt="">
+            <h4 class="pt-4">React-The Complete Guide 2020</h4>
+            <p class="text-danger">Reed Krakoff</p>
+            <div class="d-flex justify-content-between">
+              <div class="icon">
+                <p><i id="active" class="fas fa-star"><i id="active" class="fas fa-star"></i><i id="active"
+                      class="fas fa-star"></i><i class="far fa-star">
+                    </i>
+                  </i></p>
+              </div>
+              <p id="rating">4.5</p>
+              <p id="hour"><i class="far fa-clock"></i> 01:30 hr</p>
+            </div>
+          </div>
+
+          <div id="box" class="col-lg-4  shadow-lg">
+            <img class="img-fluid" width="250px" src="images/courses/course-3.png" alt="">
+            <h4 class="pt-4">React-The Complete Guide 2020</h4>
+            <p class="text-danger">Reed Krakoff</p>
+            <div class="d-flex justify-content-between">
+              <div class="icon">
+                <p><i id="active" class="fas fa-star"><i id="active" class="fas fa-star"></i><i id="active"
+                      class="fas fa-star"></i><i class="far fa-star">
+                    </i>
+                  </i></p>
+              </div>
+              <p id="rating">4.5</p>
+              <p id="hour"><i class="far fa-clock"></i> 01:30 hr</p>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 
